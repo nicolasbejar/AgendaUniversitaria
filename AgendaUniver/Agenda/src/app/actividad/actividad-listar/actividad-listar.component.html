@@ -1,0 +1,29 @@
+<h3>Listado de Actividades</h3>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Hora de Inicio</th>
+      <th scope="col">Hora de Fin</th>
+      <th scope="col">Detalles Adicionales</th>
+      <th scope="col">Evento</th>
+      <th scope="col">Localización</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of actividades">
+      <th scope="row">{{a.id}}</th>
+      <td>{{a.nombre}}</td>
+      <td>{{a.horaInicio}}</td>
+      <td>{{a.horaFin}}</td>
+      <td>{{a.detallesAdicionales}}</td>
+
+      <td *ngIf="a.evento">{{a.evento.nombre}}</td>
+      <td *ngIf="!a.evento">sin evento</td>
+      <td *ngIf="a.localizacion">{{a.localizacion.nombreLugar}}</td>
+      <td *ngIf="!a.localizacion">sin ubicacion</td>
+    </tr>
+  </tbody>
+</table>

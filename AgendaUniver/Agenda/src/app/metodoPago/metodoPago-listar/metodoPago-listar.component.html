@@ -1,0 +1,19 @@
+<div class="caja">
+    <h1 style="text-align:center" class = "p-4">MÉTODOS DE PAGO</h1>
+    <div class="container-fluid">
+        <div class="row" id = "fila">
+            <div class="col border" *ngFor= "let m of metodosPago" class="mx-1">
+                <div class="card" style="width: 14rem;" aria-colcount="4">
+                    <h5 style="text-align:center">{{m.tipoPago}}</h5>
+                    <img class="img-fluid" src='./files/logo-uniandes.jpeg' (click)="onSelected(m)"/>
+                    <div class="card-body">
+                        <div *ngIf="selected">
+                            <app-metodoPago-detail [metodoPagoDetail]="selectedMetodoPago"></app-metodoPago-detail>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>

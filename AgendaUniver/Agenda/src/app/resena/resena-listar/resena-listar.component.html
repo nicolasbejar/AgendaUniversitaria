@@ -1,0 +1,22 @@
+<div class="caja">
+<h3>Lista de Resenas</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Evento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of resenas">
+      <td scope="row">Resena {{o.id}}</td>
+      <td *ngIf="o.evento">{{o.evento.nombre}}</td>
+      <td *ngIf="!o.evento">sin evento</td>
+      <button class="btn btn-outline-info" (click) = "onSelected(o)"> Ver Mas</button>
+    </tr>
+    <div *ngIf="selected">
+      <app-resena-detail [resenaDetail]="selectedResena"></app-resena-detail>      
+    </div>
+  </tbody>
+</table>
+</div>

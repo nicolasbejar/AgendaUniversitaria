@@ -1,0 +1,26 @@
+<h3>Listado de Invitados Especiales</h3>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Retrato</th>
+      <th scope="col">Detalles</th>
+      <th scope="col">Actividad</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of invitados">
+      <th scope="row">{{i.id}}</th>
+      <td>{{i.name}}</td>
+      <td>{{i.descripcion}}</td>
+      <td>{{i.retrato}}</td>
+      <td>{{i.detalles}}</td>
+
+      <td *ngIf="i.actividad">{{i.actividad.nombre}}</td>
+      <td *ngIf="!i.actividad">sin evento</td>
+    </tr>
+  </tbody>
+</table>

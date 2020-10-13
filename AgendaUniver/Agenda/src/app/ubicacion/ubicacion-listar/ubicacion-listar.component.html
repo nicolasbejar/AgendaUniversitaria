@@ -1,0 +1,25 @@
+<div class="caja">
+<h3>Ubicacion</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Latitud></th>
+      <th scope="col">Longitud</th>
+      <th scope="col">Nombre Lugar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of ubicaciones">
+      <th scope="row">Ubicacion {{o.id}}</th>
+      <td>{{o.latitud}}</td>
+      <td>{{o.longitud}}</td>
+      <td>{{o.nombreLugar}}</td>
+      <button class="btn btn-outline-info" (click) = "onSelected(o)"> Ver Mas</button>
+    </tr>
+    <div *ngIf="selected">
+      <app-ubicacion-detail [ubicacionDetail]="selectedUbicacion"></app-ubicacion-detail>      
+    </div>
+  </tbody>
+</table>
+</div>

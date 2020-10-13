@@ -1,0 +1,20 @@
+<div class="caja">
+<h3>Listado de Organizadores</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of organizadores">
+      <td>{{o.nombre}}</td>
+      <button class="btn btn-primary" (click) = "onSelected(o)"> Ver Detalle</button>
+    </tr>
+    <div *ngIf="selected">
+      <app-organizador-detail [organizadorDetail]="selectedOrganizador"></app-organizador-detail>      
+    </div>
+  </tbody>
+</table>
+</div>

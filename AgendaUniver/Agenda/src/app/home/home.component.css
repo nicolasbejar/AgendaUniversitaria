@@ -1,0 +1,25 @@
+h1{
+    color: #66FCF1;
+    font-size: 100px;
+    font-weight:bold;
+    font-family: Helvetica;
+}
+.caja{
+    padding-right: 30%;
+    padding-left: 30%;
+}
+.catalogo{
+    padding-right: 30%;
+    padding-left: 40%;
+}
+p{
+    color: #C5C6C7;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    color: #66FCF1;
+}

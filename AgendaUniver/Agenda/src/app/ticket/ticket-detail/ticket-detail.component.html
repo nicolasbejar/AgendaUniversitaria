@@ -1,0 +1,25 @@
+
+<div class="container-fluid">
+    <p class="h3 p-3">Ticket Numero : {{ticketDetail.token}}</p>
+    <div class="row">
+      <div class="col-2">
+        <div class="thumb">
+          <img class="img-fluid" src="{{ticketDetail.codigoQR}}" />
+        </div>
+      </div>
+      <div class="col">
+        <dl>
+          <dt> Link</dt>
+          <dd>{{ticketDetail.link}}</dd>
+          <dt class="bold">Usuario</dt>
+          <dd *ngIf="ticketDetail.usuario">{{ticketDetail.usuario.nombre}}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!--<td>{{t.link}}</td>
+      <td>{{t.registrado}}</td>
+      <td</td>
+      <td *ngIf="t.pago">{{t.pago.codigo}}</td>
+      <td *ngIf="!t.pago">sin pago</td>-->

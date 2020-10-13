@@ -1,0 +1,30 @@
+<div class="caja">
+<h3>Listado de Tickets</h3>
+
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">QR</th>
+      <th scope="col">Token</th>
+      <th scope="col">&nbsp;</th>
+
+      <!--<th scope="col">Link</th>
+      <th scope="col">Registrado</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Pago</th>-->
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of tickets">
+      <td><img class="img-fluid" src='{{t.codigoQR}}'/></td>
+      <td>{{t.token}}</td>
+      <button class="btn btn-primary" (click) = "onSelected(t)"> Ver Detalle</button>
+    </tr>
+    <div *ngIf="selected">
+      <app-ticket-detail [ticketDetail]="selectedTicket"></app-ticket-detail>      
+    </div>
+  </tbody>
+</table>
+</div>

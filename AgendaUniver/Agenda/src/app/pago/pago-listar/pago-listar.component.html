@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <h1 style="text-align:center" class = "p-4">PAGOS</h1>
+  <div class="col-5" class = "contenedor">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Código</th>
+          <th class="h4">Usuaio</th>
+          <th class="h4">Fecha pago generado</th>
+          <th class="h4">Fecha Pago Realizado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of pagos">
+          <td>
+            <dd style="text-align:center">{{p.codigo}}</dd>
+          </td>
+          <td>
+            <dd style="text-align:center">{{p.usuario}}</dd>
+          </td>
+          <td>
+            <dd style="text-align:center">{{p.fechaPagoGenerado}}</dd>
+          </td>
+          <td>
+            <dd style="text-align:center">{{p.fechaPagoRealizado}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

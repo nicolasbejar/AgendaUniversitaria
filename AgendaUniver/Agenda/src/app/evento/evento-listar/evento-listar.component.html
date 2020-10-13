@@ -1,0 +1,66 @@
+
+<!--<h3>Listado de Eventos</h3>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Fecha Inicio</th>
+      <th scope="col">Fecha Fin</th>
+      <th scope="col">Capacidad Máxima</th>
+      <th scope="col">entradasDisponibles</th>
+      <th scope="col">categoria</th>
+      <th scope="col">costoA</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+      <th scope="col">Pago</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of eventos">
+      <th scope="row">{{t.id}}</th>
+      <td><img class="img-fluid" src='{{e.codigoQR}}'/></td>
+      <td>{{e.token}}</td>
+      <td>{{t.link}}</td>
+      <td>{{t.registrado}}</td>
+      <td *ngIf="t.usuario">{{t.usuario.nombre}}</td>
+      <td *ngIf="!t.usuario">sin usuario</td>
+      <td *ngIf="t.pago">{{t.pago.codigo}}</td>
+      <td *ngIf="!t.pago">sin pago</td>
+    </tr>
+  </tbody>
+</table>
+private idA: number, 
+private nombreA: string, 
+private descripcionA: string, 
+private imagenA: string, 
+private fechaInicioA: Date, 
+private fechaFinA: Date, 
+private capacidadMaximaA: number, 
+private entradasDisponiblesA: number, 
+private categoriaA: string, 
+private costoA: number, 
+private invitadoEspecialA: boolean, 
+private eventoPrivadoA: boolean, 
+private contenidosA: ContenidoMultimedia[],
+private resenasA: Resena [], 
+private patrocinadoresA: Patrocinador[], 
+private organizadoresA: Organizador[],
+private ubicacionA: Ubicacion,
+private actividadesA: Actividad [],
+private responsableA: Usuario,
+private pagosA: Pago [],-->

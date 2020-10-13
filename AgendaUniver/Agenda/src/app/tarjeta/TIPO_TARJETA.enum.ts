@@ -1,0 +1,6 @@
+export enum TIPO_TARJETA {
+    MASTERCARD,
+    VISA,
+    DINNERS_CLUB,
+    AMERICAN_EXPRESS
+}

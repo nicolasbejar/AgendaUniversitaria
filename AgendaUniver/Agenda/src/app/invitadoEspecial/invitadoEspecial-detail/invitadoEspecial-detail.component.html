@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{invitadoEspecialDetail.name}}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img class="img-fluid" src="{{invitadoEspecialDetail.retrato}}" />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt> Descripción</dt>
+        <dd>{{invitadoEspecialDetail.descripcion}}</dd>
+        <hr>
+        <dt> Detalles </dt>
+        <dd>{{invitadoEspecialDetail.detalles}}</dd>
+        <hr>
+        <dt class="bold">Actividad</dt>
+        <dd class="caption">{{invitadoEspecialDetail.actividad.nombre}}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
